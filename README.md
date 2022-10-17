@@ -5,7 +5,7 @@
 This is my **midterm** project for **IT 1000** . This project will provide information about me in the form of **Markdown pages**.
 **Below** are the links to the 4 other **Markdown pages**, as well as the information they hold.
 
-* _My Family_
+* [_My Family_](Family.md)
 * _My Hobbies_
 * _My Jobs/Work Experience_
 * _My Programming Experience_
