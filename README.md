@@ -1,1 +1,1 @@
-# IT1000MidtermProject
+# IT 1000 Midterm Project
