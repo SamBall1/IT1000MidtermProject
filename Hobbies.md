@@ -1,6 +1,6 @@
 # My Hobbies
 
-### The following is a list of my favorite hobbies.
+>The following is a list of my favorite **hobbies**.
 
 * Playing guitar/bass.
 * Working out.
@@ -9,4 +9,4 @@
 * Mountain biking.
 * Spending time with friends.
 
-#### [Return](README.md)
+>[Return](README.md)
