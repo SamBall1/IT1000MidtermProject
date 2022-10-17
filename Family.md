@@ -1,6 +1,6 @@
 # My Family
 
->The following is an image of my family and I in Moab, Utah.
+>The following is an image of my **family** and I in **Moab, Utah**.
 
 >[Return](README.md)
 
