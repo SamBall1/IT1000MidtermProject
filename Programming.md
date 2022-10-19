@@ -3,7 +3,7 @@
 >Below are the **programming languages** that I have experience with.
  
  * _Python_
- * _Java_
+ * _Java/JavaScript_
  * _GDScript_
  * _HTML_
  * _Markdown_
