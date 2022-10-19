@@ -2,6 +2,8 @@
 
 >Below are the **companies** I have worked for, and the **positions** I held within those **companies**.
 
+>[Return](README.md)
+
 1. **Olympia Gymnastics**
     * _Ninja/Parkour Coach (3 years)_
 3. **Marriott (Midas Hospitality)**
@@ -10,4 +12,3 @@
 
 ![Marriott Logo](https://logos-world.net/wp-content/uploads/2021/01/Marriott-Hotels-Resorts-Logo.png)
 
->[Return](README.md)
