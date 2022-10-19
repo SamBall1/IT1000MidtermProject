@@ -7,6 +7,6 @@ This is my **midterm** project for **IT 1000** . This project will provide infor
 
 * [_My Family_](Family.md)
 * [_My Hobbies_](Hobbies.md)
-* _My Jobs/Work Experience_
+* [_My Jobs/Work Experience_](Work.md)
 * _My Programming Experience_
 
