@@ -8,4 +8,6 @@
     * _Laundry Worker and Room Inspector (6 months)_
     * _Front Desk Agent (9 months)_
 
+![Marriott Logo](https://logos-world.net/wp-content/uploads/2021/01/Marriott-Hotels-Resorts-Logo.png)
+
 >[Return](README.md)
