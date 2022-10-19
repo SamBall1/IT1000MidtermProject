@@ -2,15 +2,15 @@
 
 >Below are the **programming languages** that I have experience with.
  
- * Python
- * Java
- * GDScript
- * HTML
- * Markdown
+ * _Python_
+ * _Java_
+ * _GDScript_
+ * _HTML_
+ * _Markdown_
 
 >Below are links to my **GameJolt** and **Itch.io** pages.
 
-* [Itch.io](https://gamesbybamsall.itch.io/)
-* [GameJolt](https://gamejolt.com/@gamesbybamsall)
+* [_Itch.io_](https://gamesbybamsall.itch.io/)
+* [_GameJolt_](https://gamejolt.com/@gamesbybamsall)
 
 >[Return](README.md)
