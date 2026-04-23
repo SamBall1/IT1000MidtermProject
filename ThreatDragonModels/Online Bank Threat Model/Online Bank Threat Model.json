@@ -31,13 +31,14 @@
                 "text": "Website De"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "4d4f958b-da26-4da9-9954-c1de2a8df20d",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Website Dev",
@@ -129,9 +129,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "da16b165-ec46-4c27-a732-d543d230efbf",
+                  "title": "User Impersonation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Threat actors impersonate legitimate users to gain unauthorized access",
+                  "mitigation": "Implement strong multi-factor authentication (MFA) mechanisms to verify user identities\nUse CAPTCHA to prevent automated attacks\nRegularly update authentication tokens\nPress enter or click to view image in full size\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -155,6 +173,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +257,6 @@
               ]
             },
             "id": "0067db18-62a2-4043-831d-b7fc8a34f885",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Visitor",
@@ -272,6 +290,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -355,7 +374,6 @@
               ]
             },
             "id": "3617043b-2997-467c-939c-09285c08c639",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -389,6 +407,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -472,7 +491,6 @@
               ]
             },
             "id": "9b9659f8-14e9-4c16-a015-94cead66cce4",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Process Website",
@@ -509,6 +527,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -592,7 +611,6 @@
               ]
             },
             "id": "3cffd59c-421f-4e06-b53c-a3d47518c265",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Authentication",
@@ -629,6 +647,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -712,7 +731,6 @@
               ]
             },
             "id": "53535d49-309d-4d6c-af8a-051d7e87267b",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Transactions",
@@ -752,6 +770,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -835,7 +854,6 @@
               ]
             },
             "id": "de763d5f-4ac3-4337-9f1f-10e54df7c211",
-            "zIndex": 7,
             "data": {
               "type": "tm.Store",
               "name": "Public Webpages",
@@ -866,16 +884,19 @@
                 "text": "Authentication Databas"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -959,7 +980,6 @@
               ]
             },
             "id": "4ec51ffc-bb4f-44d2-8ca9-05fbdcdecb0d",
-            "zIndex": 8,
             "data": {
               "type": "tm.Store",
               "name": "Authentication Database",
@@ -967,13 +987,40 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "2c798ce7-76d4-4aa4-a8f0-958930754458",
+                  "title": "Data Manipulation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attackers modify or manipulate stored data",
+                  "mitigation": "Use encryption to protect data at rest\nEmploy integrity checks to detect tampering\nRestrict access to authorized personnel only",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1000,6 +1047,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -1083,7 +1131,6 @@
               ]
             },
             "id": "74ab92bd-897c-4194-9357-a2eac5fd43fa",
-            "zIndex": 9,
             "data": {
               "type": "tm.Store",
               "name": "Transaction Database",
@@ -1518,59 +1565,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "HTTP Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "HTTP Reques"
-            ],
-            "id": "ecead31b-e789-487e-bffb-79b556a51e74",
-            "source": {
-              "x": 100,
-              "y": 250
-            },
-            "target": {
-              "cell": "9b9659f8-14e9-4c16-a015-94cead66cce4",
-              "port": "d0fa0787-ecbe-475f-8c6e-bdf7c52c3301"
-            },
-            "vertices": [
-              {
-                "x": 140,
-                "y": 190
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1591,13 +1587,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "c1a62eb7-7995-4bc3-a2dc-a2a2bb813788",
+                  "title": "HTTP Response Manipulation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers manipulate HTTP responses",
+                  "mitigation": "Implement input validation and output encoding\nUse web application firewalls (WAFs)\nFollow secure coding practices",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTP Respons"
@@ -1613,8 +1628,12 @@
             },
             "vertices": [
               {
-                "x": 320,
+                "x": 330,
                 "y": 210
+              },
+              {
+                "x": 280,
+                "y": 230
               }
             ]
           },
@@ -1674,7 +1693,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1695,13 +1715,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "06d2724a-ebfd-4a3a-a88e-0a415f243c31",
+                  "title": "Data Exposed",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Sensitive data is intercepted or exposed during transmission",
+                  "mitigation": "Use encryption for data in transit\nAvoid sending sensitive data in URL parameters\n- Restrict access to authorized personnel only\n\nn URL parameters",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Web Transaction Respons"
@@ -1719,6 +1758,10 @@
               {
                 "x": 250,
                 "y": 510
+              },
+              {
+                "x": 250,
+                "y": 540
               },
               {
                 "x": 270,
@@ -1895,18 +1938,38 @@
               "x": 520,
               "y": 660
             },
-            "vertices": [
-              {
-                "x": 730,
-                "y": 230
-              },
-              {
-                "x": 610,
-                "y": 370
-              }
-            ],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -2174,7 +2237,93 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": 230
+              },
+              {
+                "x": 610,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "afc27797-1133-484f-8736-32750749a203",
+                  "title": "HTTP Request Manipulation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers manipulate HTTP requests",
+                  "mitigation": "Implement input validation and output encoding\nUse web application firewalls (WAFs)\nFollow secure coding practices",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "HTTP Reques"
+            ],
+            "id": "ad9449f3-4ecb-4eaf-ab73-ca8c6290a7d9",
+            "source": {
+              "x": 100,
+              "y": 250
+            },
+            "target": {
+              "cell": "9b9659f8-14e9-4c16-a015-94cead66cce4",
+              "port": "d0fa0787-ecbe-475f-8c6e-bdf7c52c3301"
+            },
+            "vertices": [
+              {
+                "x": 170,
+                "y": 190
+              },
+              {
+                "x": 350,
+                "y": 170
+              }
+            ]
           }
         ],
         "description": "e-bank STRIDE"
@@ -2182,6 +2331,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Cybersecurity Architect",
-    "threatTop": 0
+    "threatTop": 5
   }
 }
